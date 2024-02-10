@@ -7,10 +7,12 @@
 #include <queue>
 using namespace std;
 
-// find pivot element in array
-// eg: vector<int> arr = {55,88,95,120,2,6,19,38,50}
-// ans = 120
+// algorithm: binary search
+// question: find pivot element in array
+// example: vector<int> arr = {55,88,95,120,2,6,19,38,50}
+// answer: ans = 120
 // explanation: pivot element is a element in array which is greater from previous and next index elements
+// tags:
 
 int findPivotElement(vector<int> &nums)
 {

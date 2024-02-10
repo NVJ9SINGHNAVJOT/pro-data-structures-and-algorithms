@@ -7,7 +7,13 @@
 #include <queue>
 using namespace std;
 
-// print spiral traversal of a matrix
+// algorithm:
+// question: print spiral traversal of a matrix
+// example:
+// answer:
+// explanation:
+// tags:
+
 
 vector<int> spiralOrder(vector<vector<int>>& matrix) {
     vector<int> ans; // to store the result

@@ -7,7 +7,12 @@
 #include <queue>
 using namespace std;
 
-// binary search 2d in array
+// algorithm: binary search
+// question: binary search 2d in array
+// example:
+// answer:
+// explanation:
+// tags:
 
 bool binarySearch(int arr[][4], int rows, int cols, int target) {
   int s = 0;
