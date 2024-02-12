@@ -6,6 +6,7 @@ class Node
 public:
     int data;
     Node *next;
+
     Node()
     {
         this->data = 0;
@@ -16,34 +17,39 @@ public:
         this->data = data;
         this->next = NULL;
     }
+
+    // TODO: Write a destrcutor to delete a node
     ~Node()
     {
-        cout << "Deleted value: " << this->data << endl;
+
+        cout << "Node with value: " << this->data << " deleted" << endl;
     }
 };
 
-// Insertion at head case
+// I want to insert a node right at the head of Linked List
 void insertAtHead(Node *&head, Node *&tail, int data)
 {
-    // Empty Linked list case
+    // check for Empty LL
     if (head == NULL)
     {
         Node *newNode = new Node(data);
         head = newNode;
         tail = newNode;
-        return;
     }
-    // Step - 1
-    Node *newNode = new Node(data);
-    // Step - 2
-    newNode->next = head;
-    // Step - 3
-    head = newNode;
+    else
+    {
+        // step1:
+        Node *newNode = new Node(data);
+        // step2:
+        newNode->next = head;
+        // step3:
+        head = newNode;
+    }
 }
 
+// I want to insert a node right at the end of LINKED LIST
 void insertAtTail(Node *&head, Node *&tail, int data)
 {
-    // Empty linked list case
     if (head == NULL)
     {
         Node *newNode = new Node(data);
@@ -51,19 +57,29 @@ void insertAtTail(Node *&head, Node *&tail, int data)
         tail = newNode;
         return;
     }
-    // Step - 1
+    // step1: creatae a node
     Node *newNode = new Node(data);
-    // Step - 2
+    // step2: connect woth tail ndoe
     tail->next = newNode;
-    // Step - 3
+    // step3: update tail;
     tail = newNode;
+}
+void print(Node *head)
+{
+
+    Node *temp = head;
+    while (temp != NULL)
+    {
+        cout << temp->data << " ";
+        temp = temp->next;
+    }
 }
 
 int findLength(Node *&head)
 {
-    int len = 1;
+    int len = 0;
     Node *temp = head;
-    while (temp->next != NULL)
+    while (temp != NULL)
     {
         temp = temp->next;
         len++;
@@ -73,7 +89,6 @@ int findLength(Node *&head)
 
 void insertAtPosition(int data, int position, Node *&head, Node *&tail)
 {
-    // Empty linked list
     if (head == NULL)
     {
         Node *newNode = new Node(data);
@@ -81,6 +96,8 @@ void insertAtPosition(int data, int position, Node *&head, Node *&tail)
         tail = newNode;
         return;
     }
+    // step1: find the position: prev & curr;
+
     if (position == 0)
     {
         insertAtHead(head, tail, data);
@@ -89,12 +106,12 @@ void insertAtPosition(int data, int position, Node *&head, Node *&tail)
 
     int len = findLength(head);
 
-    if (len == position)
+    if (position >= len)
     {
         insertAtTail(head, tail, data);
         return;
     }
-    // step1 : find the position of prev and curr
+    // ste1:find prev and curr
     int i = 1;
     Node *prev = head;
     while (i < position)
@@ -103,11 +120,14 @@ void insertAtPosition(int data, int position, Node *&head, Node *&tail)
         i++;
     }
     Node *curr = prev->next;
-    // step2 :
+
+    // step2;
     Node *newNode = new Node(data);
-    // step3 :
+
+    // step3:
     newNode->next = curr;
-    // step4 :
+
+    // step4:
     prev->next = newNode;
 }
 
@@ -129,12 +149,6 @@ void deleteNode(int position, Node *&head, Node *&tail)
         return;
     }
     int len = findLength(head);
-
-    if (position >= len)
-    {
-        cout << "position access denied" << endl;
-        return;
-    }
 
     // deleting last node
     if (position == len - 1)
@@ -178,31 +192,35 @@ void deleteNode(int position, Node *&head, Node *&tail)
     delete curr;
 }
 
-void print(Node *&head)
-{
-    Node *temp = head;
-    while (temp != NULL)
-    { // Step - 3 Stop when we reach NULL
-        // Step - 1 Print
-        cout << temp->data << " ";
-        // Step - 2 Move temp to next
-        temp = temp->next;
-    }
-}
-
 int main()
 {
-    Node *head = new Node(10);
-    Node *tail = head;
+
+    Node *head = NULL;
+    Node *tail = NULL;
     insertAtTail(head, tail, 20);
-    insertAtTail(head, tail, 30);
-    insertAtTail(head, tail, 40);
     insertAtTail(head, tail, 50);
-    insertAtPosition(101, 5, head, tail);
+    insertAtTail(head, tail, 60);
+    insertAtTail(head, tail, 90);
+    insertAtTail(head, tail, 77);
+
     print(head);
     cout << endl;
-    deleteNode(6, head, tail);
+    // cout << "head: " << head -> data << endl;
+    // cout << "tail: " << tail->data << endl;
+
+    // insertAtPosition(101, 5, head, tail);
+    // cout<< "Printing after insert at position call" << endl;
+    // print(head);
+    // cout << endl;
+    // cout << "head: " << head -> data << endl;
+    // cout << "tail: " << tail->data << endl;
+    insertAtPosition(101, 4, head, tail);
     print(head);
     cout << endl;
+    deleteNode(4, head, tail);
+    cout << endl;
+    print(head);
+    cout << endl;
+
     return 0;
 }
