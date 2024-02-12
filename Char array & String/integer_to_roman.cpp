@@ -38,4 +38,5 @@ int main()
     int num = 1994;
     string ans = intToRoman(num);
     cout << ans << endl;
+    return 0;
 }

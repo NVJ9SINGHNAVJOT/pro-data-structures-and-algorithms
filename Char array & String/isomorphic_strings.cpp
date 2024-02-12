@@ -45,4 +45,5 @@ int main()
     string t = "bar";
     int ans = isIsomorphic(s, t);
     cout << ans << endl;
+    return 0;
 }

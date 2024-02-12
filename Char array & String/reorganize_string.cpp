@@ -66,4 +66,5 @@ int main()
     string s = "aaabbbefgg";
     string ans = reorganizeString(s);
     cout << ans << endl;
+    return 0;
 }

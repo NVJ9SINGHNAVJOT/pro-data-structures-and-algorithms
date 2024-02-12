@@ -51,4 +51,5 @@ int main()
     string s = "    -123hello125478";
     int ans = myAtoi(s);
     cout << ans << endl;
+    return 0;
 }
