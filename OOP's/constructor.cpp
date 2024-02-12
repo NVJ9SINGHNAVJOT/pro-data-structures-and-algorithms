@@ -1,26 +1,32 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-class Animal{
+class Animal
+{
     int age;
-    public:
+
+public:
     // default constructor
-    Animal(){
-        cout<<"Default constructor called"<<endl;
+    Animal()
+    {
+        cout << "Default constructor called" << endl;
     }
     // parameterized constructor
-    Animal(int age){
+    Animal(int age)
+    {
         this->age = age;
-        cout<<"Parameterized constructor called"<<endl;
+        cout << "Parameterized constructor called" << endl;
     }
     // Copy constructor
-    Animal(Animal& obj){
+    Animal(Animal &obj)
+    {
         this->age = age;
-        cout<<"Copy constructor called";
+        cout << "Copy constructor called";
     }
 };
-int main(){
-    Animal suresh; // Default constructor
-    Animal ramesh(30); // Parameterized constructor
+int main()
+{
+    Animal suresh;       // Default constructor
+    Animal ramesh(30);   // Parameterized constructor
     Animal copy(suresh); // Copy constructor
     return 0;
 }
