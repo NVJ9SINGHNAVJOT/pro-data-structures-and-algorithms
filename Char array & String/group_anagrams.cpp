@@ -5,6 +5,8 @@
 #include <limits.h>
 #include <stack>
 #include <queue>
+#include <unordered_map>
+#include <map>
 using namespace std;
 
 // algorithm:
@@ -14,14 +16,14 @@ using namespace std;
 // explanation:
 // tags:
 
-std::array<int, 256> hash(string s)
+std::array<int, 256> hashTheString(string s)
 {
-    std::array<int, 256> hash = {0};
+    std::array<int, 256> hashVector = {0};
     for (int i = 0; i < s.length(); i++)
     {
-        hash[s[i]]++;
+        hashVector[s[i]]++;
     }
-    return hash;
+    return hashVector;
 }
 
 vector<vector<string>> groupAnagrams(vector<string> &strs)
@@ -40,11 +42,11 @@ vector<vector<string>> groupAnagrams(vector<string> &strs)
     // return ans;
 
     // Method - 2 -> Without sorting
-    
+
     map<std::array<int, 256>, vector<string>> mp;
     for (auto str : strs)
     {
-        mp[hash(str)].push_back(str);
+        mp[hashTheString(str)].push_back(str);
     }
 
     vector<vector<string>> ans;
@@ -60,4 +62,12 @@ int main()
 {
     vector<string> strs = {"eat", "tea", "tan", "ate", "nat", "bat"};
     vector<vector<string>> ans = groupAnagrams(strs);
+    for (auto str : ans)
+    {
+        for (auto s : str)
+        {
+            cout << s << " ";
+        }
+        cout << endl;
+    }
 }
