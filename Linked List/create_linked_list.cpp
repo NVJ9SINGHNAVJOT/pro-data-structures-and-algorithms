@@ -64,6 +64,7 @@ void insertAtTail(Node *&head, Node *&tail, int data)
     // step3: update tail;
     tail = newNode;
 }
+
 void print(Node *head)
 {
 
