@@ -8,9 +8,6 @@ using namespace std;
 // explanation:
 // tags:
 
-#include <iostream>
-using namespace std;
-
 class Node
 {
 public:
