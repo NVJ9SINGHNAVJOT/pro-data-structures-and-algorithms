@@ -10,7 +10,7 @@ using namespace std;
 // explanation:
 // tags:
 
-vector<int> nextSmaller(vector<int> &input)
+vector<int> nextSmallerElement(vector<int> &input)
 {
     stack<int> s;
     s.push(-1);
@@ -44,7 +44,7 @@ int main()
     input.push_back(4);
     input.push_back(3);
 
-    vector<int> ans = nextSmaller(input);
+    vector<int> ans = nextSmallerElement(input);
 
     cout << "Printing ans1" << endl;
 
