@@ -61,22 +61,40 @@ int maxSubArray2(vector<int> &nums)
 {
     int n = nums.size();
 
-    int maxSum = nums[0];
-    int currSum = nums[0];
+    int maxSum = INT_MIN;
+    int currSum = 0;
 
-    for (int i = 1; i < n; i++)
+    int start = -1;
+    int end = -1;
+
+    for (int i = 0; i < n; i++)
     {
-        if (currSum > 0)
+        if (currSum == 0)
         {
-            currSum = currSum + nums[i];
+            start = i;
         }
-        else
-            currSum = nums[i];
 
-        maxSum = max(maxSum, currSum);
+        // add current element in currSum
+        currSum = currSum + nums[i];
+
+        // check if currSum is greater than maxSum
+        if (currSum > maxSum)
+        {
+            maxSum = currSum;
+            end = i;
+        }
+
+        // if with addition of current element currSum goes to negative
+        // then currSum set to 0 as we dont want to carry -ive sum further
+        if (currSum < 0)
+        {
+            currSum = 0;
+        }
     }
+    cout << start << ", " << end << endl;
     return maxSum;
 }
+
 int main()
 {
     vector<int> nums = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
