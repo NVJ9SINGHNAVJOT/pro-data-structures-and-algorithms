@@ -2,6 +2,13 @@
 #include <queue>
 using namespace std;
 
+// algorithm:
+// question: height-max-depth
+// example:
+// answer:
+// explanation:
+// tags:
+
 class Node
 {
 public:
