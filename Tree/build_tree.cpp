@@ -47,6 +47,7 @@ int main()
     Node *root = NULL;
 
     root = buildTree();
+    // nodes: 20 30 50 -1 60 -1 -1 40 -1 -1 100 -1 -1
 
     return 0;
 }
