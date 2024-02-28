@@ -29,6 +29,7 @@ bool kthAncestor(Node *root, int &k, int p)
     if (k == 0)
     {
         cout << "Answer: " << root->data << endl;
+        // important to set k = -1
         k = -1;
     }
 
