@@ -81,7 +81,7 @@ void printTopView(Node *root)
 
         if (topNode.find(hd) == topNode.end())
         {
-            // crete entry
+            // create entry
             topNode[hd] = frontNode->data;
         }
 
