@@ -1,0 +1,46 @@
+#include <iostream>
+#include <queue>
+#include <map>
+#include <set>
+#include <vector>
+using namespace std;
+
+// https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/
+
+// Definition for a binary tree node.
+struct TreeNode
+{
+    int val;
+    TreeNode *left;
+    TreeNode *right;
+    TreeNode() : val(0), left(nullptr), right(nullptr) {}
+    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+    TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+};
+
+// algorithm:
+// question: flatten binary tree to linked list
+// example:
+// answer:
+// explanation:
+// tags:
+
+void flatten(TreeNode *root)
+{
+    TreeNode *curr = root;
+    while (curr)
+    {
+        if (curr->left)
+        {
+            TreeNode *pred = curr->left;
+            while (pred->right)
+            {
+                pred = pred->right;
+            }
+            pred->right = curr->right;
+            curr->right = curr->left;
+            curr->left = nullptr;
+        }
+        curr = curr->right;
+    }
+}
