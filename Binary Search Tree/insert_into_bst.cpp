@@ -55,6 +55,7 @@ void takeInput(Node *&root)
 int main()
 {
     Node *root = NULL;
+    // data of all nodes is unique
     cout << "Enter the data for Node " << endl;
     takeInput(root);
     return 0;
