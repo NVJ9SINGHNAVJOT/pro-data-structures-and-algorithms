@@ -10,6 +10,24 @@ using namespace std;
 // explanation:
 // tags:
 
+// https://leetcode.com/problems/copy-list-with-random-pointer/description/
+
+// Definition for a data structure
+class Node
+{
+public:
+    int data;
+    Node *next;
+    Node *random;
+
+    Node(int _data)
+    {
+        data = _data;
+        next = NULL;
+        random = NULL;
+    }
+};
+
 // method 1
 Node *helper(Node *head, unordered_map<Node *, Node *> &mp)
 {
