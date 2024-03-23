@@ -40,7 +40,7 @@ int main()
     int n = 11;
     buildHeap(arr, n);
 
-    cout << "printint the heap " << endl;
+    cout << "printing the heap " << endl;
     for (int i = 0; i <= n; i++)
     {
         cout << arr[i] << " ";
