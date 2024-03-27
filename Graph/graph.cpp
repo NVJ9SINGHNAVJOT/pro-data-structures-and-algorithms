@@ -78,12 +78,12 @@ public:
             }
             cout << endl;
         }
+        cout << endl;
     }
 };
 
 int main()
 {
-
     Graph<int> g;
 
     // g.addEdge(srcNode, destNode, weight, direction);
@@ -95,7 +95,6 @@ int main()
     g.printAdjacencyList();
 
     // run a loop for all nodes
-    cout << endl;
     cout << "Printing BFS Traversal: " << endl;
     unordered_map<int, bool> visited;
     for (int i = 0; i < g.adjList.size(); i++)
