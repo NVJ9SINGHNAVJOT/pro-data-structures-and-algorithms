@@ -13,7 +13,7 @@ public:
     // weight are integers only
     unordered_map<T, list<pair<T, int>>> adjList;
 
-    void addEdge(T u, T v, bool direction, int weight)
+    void addEdge(T u, T v, bool direction, int weight = 1)
     {
         // direction = 0 -> undirected graph
         // direction = 1 -> directed graph
@@ -87,10 +87,10 @@ int main()
     Graph<int> g;
 
     // g.addEdge(srcNode, destNode, weight, direction);
-    g.addEdge(0, 1, 0, 0);
-    g.addEdge(1, 3, 0, 0);
-    g.addEdge(0, 2, 0, 0);
-    g.addEdge(2, 4, 0, 0);
+    g.addEdge(0, 1, 0, 1);
+    g.addEdge(1, 3, 0, 1);
+    g.addEdge(0, 2, 0, 1);
+    g.addEdge(2, 4, 0, 1);
 
     g.printAdjacencyList();
 
@@ -119,7 +119,7 @@ int main()
 
     // from single src node
     cout << endl;
-    cout << "Printing BFS Traversal: " << endl;
+    cout << "Printing BFS Traversal with src = 3:" << endl;
     unordered_map<int, bool> visited3;
     g.bfs(3, visited3);
 
