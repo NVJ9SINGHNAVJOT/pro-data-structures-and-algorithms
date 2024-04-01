@@ -80,33 +80,22 @@ public:
         cout << endl;
     }
 
-    bool isUndirectedCyclicBfs(int src, unordered_map<int, bool> &visited)
+    bool isUndirectedCyclicDfs(int src, unordered_map<int, bool> &visited, int parent)
     {
-        queue<int> q;
-        unordered_map<int, int> parent;
-
-        q.push(src);
         visited[src] = true;
-        parent[src] = -1;
 
-        while (!q.empty())
+        for (pair<int, int> nbr : adjList[src])
         {
-            int frontNode = q.front();
-            q.pop();
-
-            for (pair<int, int> nbr : adjList[frontNode])
+            if (!visited[nbr.first])
             {
-                if (!visited[nbr.first])
-                {
-                    q.push(nbr.first);
-                    visited[nbr.first] = true;
-                    parent[nbr.first] = frontNode;
-                }
-                if (visited[nbr.first] && nbr.first != parent[frontNode])
-                {
-                    // cycle present
+                bool checkAageKaAns = isUndirectedCyclicDfs(nbr.first, visited, src);
+                if (checkAageKaAns == true)
                     return true;
-                }
+            }
+            if (visited[nbr.first] && nbr.first != parent)
+            {
+                // cycle present
+                return true;
             }
         }
         return false;
@@ -120,11 +109,21 @@ int main()
     // g.addEdge(srcNode, destNode, weight, direction);
     g.addEdge(0, 1, 0);
     g.addEdge(1, 2, 0);
-    g.addEdge(2, 3, 0);
+    g.addEdge(1, 3, 0);
     g.addEdge(3, 4, 0);
-    g.addEdge(4, 2, 0);
+    g.addEdge(3, 5, 0);
+    g.addEdge(4, 6, 0);
+    g.addEdge(5, 6, 0);
 
     g.printAdjacencyList();
+
+    cout << endl;
+    unordered_map<int, bool> visited1;
+    g.dfs(3, visited1);
+    cout << endl;
+    unordered_map<int, bool> visited2;
+    g.bfs(3, visited2);
+    cout << endl;
 
     bool ans = false;
     unordered_map<int, bool> visited;
@@ -132,7 +131,7 @@ int main()
     {
         if (!visited[i])
         {
-            ans = g.isUndirectedCyclicBfs(i, visited);
+            ans = g.isUndirectedCyclicDfs(i, visited, -1);
             if (ans == true)
                 break;
         }
