@@ -6,6 +6,8 @@
 using namespace std;
 template <typename T>
 
+// change T with required type for graph
+
 class Graph
 {
 public:
