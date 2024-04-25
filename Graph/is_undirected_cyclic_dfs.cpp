@@ -8,7 +8,7 @@ using namespace std;
 class Graph
 {
 public:
-    // graph created with unordere_map
+    // graph created with unordered_map
     // weight are integers only
     unordered_map<int, list<pair<int, int>>> adjList;
 

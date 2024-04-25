@@ -3,15 +3,15 @@
 #include <unordered_map>
 #include <list>
 #include <queue>
+#include <stack>
 using namespace std;
-template <typename T>
 
 class Graph
 {
-    unordered_map<T, list<T>> adjList;
-
 public:
-    void addEdge(T u, T v, bool direction)
+    unordered_map<int, list<int>> adjList;
+
+    void addEdge(int u, int v, bool direction)
     {
         // direction = 0 -> undirected graph
         // direction = 1 -> directed graph
@@ -77,45 +77,58 @@ public:
             cout << endl;
         }
     }
+
+    // graph should be directed acyclic
+    void topSortDfs(int src, unordered_map<int, bool> &visited, stack<int> &ans)
+    {
+        visited[src] = true;
+
+        for (int nbr : adjList[src])
+        {
+            if (!visited[nbr])
+            {
+                topSortDfs(nbr, visited, ans);
+            }
+        }
+
+        ans.push(src);
+    }
 };
 
 int main()
 {
+    Graph g;
 
-    Graph<int> g;
-
-    // n -> number of nodes in graph
-    int n = 5;
-    g.addEdge(0, 1, 0);
-    g.addEdge(1, 3, 0);
-    g.addEdge(0, 2, 0);
-    g.addEdge(2, 4, 0);
+    // g.addEdge(srcNode, destNode, direction);
+    g.addEdge(0, 1, 1);
+    g.addEdge(1, 2, 1);
+    g.addEdge(2, 3, 1);
+    g.addEdge(2, 4, 1);
+    g.addEdge(3, 5, 1);
+    g.addEdge(4, 5, 1);
+    g.addEdge(5, 7, 1);
+    g.addEdge(5, 6, 1);
 
     g.printAdjacencyList();
-    cout << endl;
 
+    stack<int> ans;
     unordered_map<int, bool> visited;
 
-    // run a loop for all nodes
-    cout << "Printing BFS Traversal: " << endl;
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < g.adjList.size(); i++)
     {
         if (!visited[i])
         {
-            g.bfs(i, visited);
+            g.topSortDfs(i, visited, ans);
         }
     }
-    cout << endl
-         << "Printing DFS Traversal: " << endl;
 
-    unordered_map<int, bool> visited2;
-    for (int i = 0; i < n; i++)
+    cout << "topological sort" << endl;
+    while (!ans.empty())
     {
-        if (!visited2[i])
-        {
-            g.dfs(i, visited2);
-        }
+        cout << ans.top() << ", ";
+        ans.pop();
     }
+    cout << endl;
 
     return 0;
 }
