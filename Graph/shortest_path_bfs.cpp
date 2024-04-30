@@ -13,7 +13,7 @@ class Graph
 public:
     unordered_map<int, list<pair<int, int>>> adjList;
 
-    void addEdge(int u, int v, int weight, bool direction)
+    void addEdge(int u, int v, bool direction, int weight = 1)
     {
         // direction = 0 -> undirected graph
         // direction = 1 -> directed graph
@@ -91,7 +91,7 @@ public:
 int main()
 {
     Graph g1;
-    // g1.addEdge(srcNode, destNode, weight, direction);
+    // g1.addEdge(srcNode, destNode, direction, weight);
     g1.addEdge(0, 1, 1, 1);
     g1.addEdge(0, 2, 1, 1);
     g1.addEdge(0, 3, 1, 1);

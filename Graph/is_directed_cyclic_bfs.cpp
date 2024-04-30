@@ -9,20 +9,22 @@ using namespace std;
 class Graph
 {
 public:
-    unordered_map<int, list<int>> adjList;
+    // graph created with unordered_map
+    // weight are integers only
+    unordered_map<int, list<pair<int, int>>> adjList;
 
-    void addEdge(int u, int v, bool direction)
+    void addEdge(int u, int v, bool direction, int weight = 1)
     {
         // direction = 0 -> undirected graph
         // direction = 1 -> directed graph
 
         // create an edge from u to v
-        adjList[u].push_back(v);
+        adjList[u].push_back({v, weight});
         if (direction == 0)
         {
             // undirected edge
             // create an edge from v to u
-            adjList[v].push_back(u);
+            adjList[v].push_back({u, weight});
         }
     }
 
@@ -40,12 +42,12 @@ public:
             cout << frontNode << ", ";
 
             // insert neighbours
-            for (auto neighbour : adjList[frontNode])
+            for (pair<int, int> neighbour : adjList[frontNode])
             {
-                if (!visited[neighbour])
+                if (!visited[neighbour.first])
                 {
-                    q.push(neighbour);
-                    visited[neighbour] = true;
+                    q.push(neighbour.first);
+                    visited[neighbour.first] = true;
                 }
             }
         }
@@ -56,11 +58,11 @@ public:
         cout << src << ", ";
         visited[src] = true;
 
-        for (auto neighbour : adjList[src])
+        for (pair<int, int> neighbour : adjList[src])
         {
-            if (!visited[neighbour])
+            if (!visited[neighbour.first])
             {
-                dfs(neighbour, visited);
+                dfs(neighbour.first, visited);
             }
         }
     }
@@ -69,13 +71,14 @@ public:
     {
         for (auto node : adjList)
         {
-            cout << node.first << "-> ";
-            for (auto neighbour : node.second)
+            cout << node.first << " -> ";
+            for (pair<int, int> neighbour : node.second)
             {
-                cout << neighbour << ", ";
+                cout << "(" << neighbour.first << "," << neighbour.second << ")";
             }
             cout << endl;
         }
+        cout << endl;
     }
 
     bool isDirectedCyclicbfs()
@@ -87,14 +90,14 @@ public:
         // indegree calculation
         for (auto &node : adjList)
         {
-            for (int nbr : node.second)
+            for (pair<int, int> nbr : node.second)
             {
-                inDegree[nbr]++;
+                inDegree[nbr.first]++;
             }
         }
 
         // put all nodes inside queue, which has indegree == 0
-        for (auto node : adjList)
+        for (auto &node : adjList)
         {
             if (inDegree[node.first] == 0)
             {
@@ -109,13 +112,13 @@ public:
             q.pop();
             count++;
 
-            for (int nbr : adjList[fNode])
+            for (pair<int, int> nbr : adjList[fNode])
             {
-                inDegree[nbr]--;
+                inDegree[nbr.first]--;
                 // check again for zero indegree for nbr
-                if (inDegree[nbr] == 0)
+                if (inDegree[nbr.first] == 0)
                 {
-                    q.push(nbr);
+                    q.push(nbr.first);
                 }
             }
         }
@@ -128,13 +131,13 @@ int main()
 {
     Graph g;
 
-    // g.addEdge(srcNode, destNode, direction);
-    g.addEdge(0, 1, 1);
-    g.addEdge(1, 2, 1);
-    g.addEdge(2, 3, 1);
-    g.addEdge(3, 4, 1);
-    g.addEdge(4, 5, 1);
-    g.addEdge(5, 2, 1);
+    // g.addEdge(srcNode, destNode, direction, weight);
+    g.addEdge(0, 1, 1, 1);
+    g.addEdge(1, 2, 1, 1);
+    g.addEdge(2, 3, 1, 1);
+    g.addEdge(3, 4, 1, 1);
+    g.addEdge(4, 5, 1, 1);
+    g.addEdge(5, 2, 1, 1);
 
     g.printAdjacencyList();
 
