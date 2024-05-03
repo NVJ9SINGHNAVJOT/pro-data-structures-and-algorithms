@@ -7,6 +7,7 @@
 #include <queue>
 #include <unordered_map>
 #include <map>
+#include <list>
 using namespace std;
 
 // algorithm:
