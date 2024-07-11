@@ -19,8 +19,8 @@ using namespace std;
 // tags:
 
 // https://leetcode.com/problems/merge-k-sorted-lists/description/
-//  Definition for singly-linked list.
 
+//  Definition for singly-linked list.
 struct ListNode
 {
     int val;

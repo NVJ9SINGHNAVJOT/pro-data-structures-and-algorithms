@@ -5,6 +5,13 @@
 #include <vector>
 using namespace std;
 
+// algorithm:
+// question: morris traversal
+// example:
+// answer:
+// explanation:
+// tags:
+
 // https://leetcode.com/problems/binary-tree-inorder-traversal/description/
 
 // Definition for a binary tree node.
@@ -17,13 +24,6 @@ struct TreeNode
     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
-
-// algorithm:
-// question: morris traversal
-// example:
-// answer:
-// explanation:
-// tags:
 
 vector<int> inorderTraversal(TreeNode *root)
 {

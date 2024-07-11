@@ -5,14 +5,14 @@
 #include <vector>
 using namespace std;
 
-// https://leetcode.com/problems/find-bottom-left-tree-value/description/
-
 // algorithm:
 // question: find bottom left tree value
 // example:
 // answer:
 // explanation:
 // tags:
+
+// https://leetcode.com/problems/find-bottom-left-tree-value/description/
 
 // Definition for a binary tree node.
 struct TreeNode

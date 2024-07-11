@@ -8,20 +8,6 @@
 #include <map>
 using namespace std;
 
-// https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/
-
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * };
- */
-
 // algorithm:
 // question: zig-zag level order
 // example:
@@ -29,6 +15,9 @@ using namespace std;
 // explanation:
 // tags:
 
+// https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/
+
+// Definition for a binary tree node.
 struct TreeNode
 {
     int val;
