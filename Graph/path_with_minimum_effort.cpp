@@ -84,7 +84,7 @@ public:
     }
 };
 
-// this is better approach and as dijkastra algo is used it automatically get node which have got answer
+// this is better approach and as dijkastra algo is used to automatically get node which have got answer
 // int minimumEffortPath(vector<vector<int>>& heights) {
 //     priority_queue< pair<int,pair<int,int> >, vector<pair<int,pair<int,int> > >, greater<pair<int,pair<int,int> > > > pq;
 //     vector<vector<int> > dist(heights.size(), vector<int>(heights[0].size(), INT_MAX));
