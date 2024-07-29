@@ -10,8 +10,8 @@
 #include <list>
 #include <unordered_set>
 using namespace std;
-template <typename T>
 
+template <typename T>
 class Array2D
 {
 public:
@@ -40,7 +40,6 @@ public:
 };
 
 template <typename T>
-
 void printArray(T array[], int sizeOfArray)
 {
     cout << endl;
