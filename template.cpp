@@ -9,6 +9,7 @@
 #include <map>
 #include <list>
 #include <unordered_set>
+#include <numeric>
 using namespace std;
 
 // algorithm:
