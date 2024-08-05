@@ -147,6 +147,8 @@ int solveSpace(int weight[], int value[], int n, int capacity)
 
             curr[wt] = max(include, exclude);
         }
+
+        prev = curr;
     }
 
     return curr[capacity];
