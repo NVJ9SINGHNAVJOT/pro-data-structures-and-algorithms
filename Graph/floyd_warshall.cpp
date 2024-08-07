@@ -92,6 +92,6 @@ int main()
     g.addEdge(3, 2, 1, 2);
     g.printAdjacencyList();
 
-    g.floydWarshal(4);
+    g.floydWarshall(4);
     return 0;
 }

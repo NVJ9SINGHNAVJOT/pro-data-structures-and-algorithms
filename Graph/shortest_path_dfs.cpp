@@ -233,7 +233,7 @@ int main()
 
     g1.printAdjacencyList();
 
-    g1.shortestPathDfs(2, 3, g1.adjList.size() + 1);
+    g1.shortestPathDfs(0, 3, g1.adjList.size() + 1);
 
     return 0;
 }

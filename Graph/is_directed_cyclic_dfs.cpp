@@ -27,45 +27,6 @@ public:
         }
     }
 
-    void bfs(int src, unordered_map<int, bool> &visited)
-    {
-        queue<int> q;
-
-        q.push(src);
-        visited[src] = true;
-
-        while (!q.empty())
-        {
-            int frontNode = q.front();
-            q.pop();
-            cout << frontNode << ", ";
-
-            // insert neighbours
-            for (pair<int, int> neighbour : adjList[frontNode])
-            {
-                if (!visited[neighbour.first])
-                {
-                    q.push(neighbour.first);
-                    visited[neighbour.first] = true;
-                }
-            }
-        }
-    }
-
-    void dfs(int src, unordered_map<int, bool> &visited)
-    {
-        cout << src << ", ";
-        visited[src] = true;
-
-        for (pair<int, int> neighbour : adjList[src])
-        {
-            if (!visited[neighbour.first])
-            {
-                dfs(neighbour.first, visited);
-            }
-        }
-    }
-
     void printAdjacencyList()
     {
         for (auto node : adjList)
