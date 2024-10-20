@@ -4,7 +4,6 @@
 using namespace std;
 
 // algorithm:
-// question: longest valid parentheses
 // example:
 // answer:
 // explanation:

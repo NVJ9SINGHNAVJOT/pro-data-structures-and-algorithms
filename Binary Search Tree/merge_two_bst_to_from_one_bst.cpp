@@ -14,7 +14,6 @@
 using namespace std;
 
 // algorithm:
-// question: merge two bst to from one bst
 // example:
 // answer:
 // explanation:

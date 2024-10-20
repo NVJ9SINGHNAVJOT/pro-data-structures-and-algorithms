@@ -8,7 +8,6 @@
 using namespace std;
 
 // algorithm:
-// question: in place merge sort
 // example:
 // answer:
 // explanation:

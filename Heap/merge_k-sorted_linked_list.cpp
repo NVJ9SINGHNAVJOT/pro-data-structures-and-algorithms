@@ -12,7 +12,6 @@
 using namespace std;
 
 // algorithm:
-// question: merge k-sorted linked list
 // example:
 // answer:
 // explanation:

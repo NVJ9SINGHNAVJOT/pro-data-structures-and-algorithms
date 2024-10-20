@@ -8,7 +8,6 @@
 using namespace std;
 
 // algorithm:
-// question: max segment of rod
 // example:
 // answer:
 // explanation:

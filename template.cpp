@@ -13,7 +13,6 @@
 using namespace std;
 
 // algorithm:
-// question:
 // example:
 // answer:
 // explanation:

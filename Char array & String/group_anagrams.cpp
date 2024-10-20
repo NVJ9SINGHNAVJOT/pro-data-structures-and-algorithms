@@ -10,7 +10,6 @@
 using namespace std;
 
 // algorithm:
-// question: group anagrams
 // example:
 // answer:
 // explanation:

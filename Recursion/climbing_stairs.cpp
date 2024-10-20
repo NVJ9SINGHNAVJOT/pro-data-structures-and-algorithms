@@ -8,7 +8,6 @@
 using namespace std;
 
 // algorithm:
-// question: climbing stairs
 // example:
 // answer:
 // explanation:

@@ -10,7 +10,6 @@
 using namespace std;
 
 // algorithm:
-// question: circular tower-gas station
 // example:
 // answer:
 // explanation:

@@ -8,7 +8,6 @@
 using namespace std;
 
 // algorithm:
-// question: minimum cost for tickets
 // example:
 // answer:
 // explanation:

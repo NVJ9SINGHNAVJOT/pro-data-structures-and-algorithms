@@ -13,7 +13,6 @@
 using namespace std;
 
 // algorithm:
-// question: strongly connected components kosaraju's algorithm
 // example:
 // answer:
 // explanation:

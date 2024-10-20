@@ -12,7 +12,6 @@
 using namespace std;
 
 // algorithm:
-// question: minimum number of refuling stops
 // example:
 // answer:
 // explanation:

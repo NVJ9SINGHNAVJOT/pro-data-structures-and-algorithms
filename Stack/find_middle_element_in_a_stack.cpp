@@ -3,7 +3,6 @@
 using namespace std;
 
 // algorithm:
-// question: find middle element in a stack
 // example:
 // answer:
 // explanation:

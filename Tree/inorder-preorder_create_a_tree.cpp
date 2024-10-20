@@ -4,7 +4,6 @@
 using namespace std;
 
 // algorithm:
-// question: inorder-preorder create a tree
 // example:
 // answer:
 // explanation:

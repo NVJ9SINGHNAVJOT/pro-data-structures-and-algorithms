@@ -13,7 +13,6 @@
 using namespace std;
 
 // algorithm:
-// question: burning tree
 // example:
 // answer:
 // explanation:

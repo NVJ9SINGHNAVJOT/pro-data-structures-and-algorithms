@@ -3,7 +3,6 @@
 using namespace std;
 
 // algorithm:
-// question: reverse a stack
 // example:
 // answer:
 // explanation:

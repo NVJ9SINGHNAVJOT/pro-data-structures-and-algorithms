@@ -8,7 +8,6 @@
 using namespace std;
 
 // algorithm:
-// question: reorganize string
 // example:
 // answer:
 // explanation:

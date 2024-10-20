@@ -2,7 +2,6 @@
 using namespace std;
 
 // algorithm:
-// question: delete n nodes after m nodes
 // example:
 // answer:
 // explanation:

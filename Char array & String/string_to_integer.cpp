@@ -10,7 +10,6 @@
 using namespace std;
 
 // algorithm:
-// question: string to integer
 // example:
 // answer:
 // explanation:

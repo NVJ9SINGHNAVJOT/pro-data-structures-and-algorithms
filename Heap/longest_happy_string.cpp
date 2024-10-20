@@ -12,7 +12,6 @@
 using namespace std;
 
 // algorithm:
-// question: longest happy string
 // example:
 // answer:
 // explanation:

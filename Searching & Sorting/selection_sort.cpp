@@ -9,7 +9,6 @@
 using namespace std;
 
 // algorithm: selection sort
-// question:
 // example:
 // answer:
 // explanation:

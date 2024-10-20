@@ -2,7 +2,6 @@
 using namespace std;
 
 // algorithm:
-// question: merge node in between zeros
 // example:
 // answer:
 // explanation:

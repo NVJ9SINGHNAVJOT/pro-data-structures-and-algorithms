@@ -2,7 +2,6 @@
 using namespace std;
 
 // algorithm:
-// question: merge two sorted lists
 // example:
 // answer:
 // explanation:

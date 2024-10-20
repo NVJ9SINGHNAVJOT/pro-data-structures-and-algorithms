@@ -8,7 +8,6 @@
 using namespace std;
 
 // algorithm:
-// question: max sum of non-adjacent elements
 // example:
 // answer:
 // explanation:

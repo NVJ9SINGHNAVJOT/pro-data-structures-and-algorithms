@@ -8,7 +8,6 @@
 using namespace std;
 
 // algorithm: back tracking
-// question: rat in a maze
 // example:
 // answer:
 // explanation:

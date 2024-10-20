@@ -3,7 +3,6 @@
 using namespace std;
 
 // algorithm:
-// question: expression contains redundant bracket or not
 // example:
 // answer:
 // explanation:

@@ -2,7 +2,6 @@
 using namespace std;
 
 // algorithm: tortoise algorithm
-// question: find middle of linked list
 // example:
 // answer:
 // explanation:

@@ -8,7 +8,6 @@
 using namespace std;
 
 // algorithm:
-// question: lowest common ancestor
 // example:
 // answer:
 // explanation:

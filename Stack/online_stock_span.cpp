@@ -4,7 +4,6 @@
 using namespace std;
 
 // algorithm: monotonic stack
-// question: online stock span
 // example:
 // answer:
 // explanation:

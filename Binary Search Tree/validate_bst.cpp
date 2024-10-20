@@ -10,7 +10,6 @@
 using namespace std;
 
 // algorithm:
-// question: validate bst
 // example:
 // answer:
 // explanation:

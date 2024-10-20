@@ -2,7 +2,6 @@
 using namespace std;
 
 // algorithm:
-// question: reverse a linked list
 // example:
 // answer:
 // explanation:

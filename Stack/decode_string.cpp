@@ -5,7 +5,6 @@
 using namespace std;
 
 // algorithm:
-// question: decode string
 // example:
 // answer:
 // explanation:

@@ -8,7 +8,6 @@
 using namespace std;
 
 // algorithm: include and exclude
-// question: generate parentheses
 // example:
 // answer:
 // explanation:

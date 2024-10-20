@@ -10,7 +10,6 @@
 using namespace std;
 
 // algorithm: sliding window
-// question: first -ve integer in every window
 // example:
 // answer:
 // explanation:

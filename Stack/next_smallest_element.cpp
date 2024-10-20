@@ -4,7 +4,6 @@
 using namespace std;
 
 // algorithm:
-// question: next smallest element
 // example:
 // answer:
 // explanation:

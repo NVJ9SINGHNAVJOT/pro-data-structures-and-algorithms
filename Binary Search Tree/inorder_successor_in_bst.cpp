@@ -10,7 +10,6 @@
 using namespace std;
 
 // algorithm:
-// question: inorder successor in bst
 // example:
 // answer:
 // explanation:

@@ -9,7 +9,6 @@
 using namespace std;
 
 // algorithm:
-// question: distributing repeating integers
 // example:
 // answer:
 // explanation:

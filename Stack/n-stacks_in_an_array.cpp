@@ -4,7 +4,6 @@
 using namespace std;
 
 // algorithm:
-// question: n stacks in an array
 // example:
 // answer:
 // explanation:

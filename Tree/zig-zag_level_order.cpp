@@ -9,7 +9,6 @@
 using namespace std;
 
 // algorithm:
-// question: zig-zag level order
 // example:
 // answer:
 // explanation:

@@ -3,7 +3,6 @@
 using namespace std;
 
 // algorithm:
-// question: valid parenthesis
 // example:
 // answer:
 // explanation:

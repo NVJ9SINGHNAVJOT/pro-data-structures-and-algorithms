@@ -12,7 +12,6 @@
 using namespace std;
 
 // algorithm:
-// question: word ladder
 // example:
 // answer:
 // explanation:

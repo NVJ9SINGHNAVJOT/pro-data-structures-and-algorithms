@@ -3,7 +3,6 @@
 using namespace std;
 
 // algorithm:
-// question: k groups-reverse in linked list
 // example:
 // answer:
 // explanation:

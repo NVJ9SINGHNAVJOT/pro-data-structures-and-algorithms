@@ -4,7 +4,6 @@
 using namespace std;
 
 // algorithm:
-// question: count the reversals
 // example:
 // answer:
 // explanation:

@@ -2,7 +2,6 @@
 using namespace std;
 
 // algorithm:
-// question: flatten linked list
 // example:
 // answer:
 // explanation:

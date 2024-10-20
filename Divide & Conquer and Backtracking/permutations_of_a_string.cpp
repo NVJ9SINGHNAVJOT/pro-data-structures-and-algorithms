@@ -8,7 +8,6 @@
 using namespace std;
 
 // algorithm: back tracking
-// question: permutations of a string
 // example:
 // answer:
 // explanation:

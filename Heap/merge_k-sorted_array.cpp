@@ -10,7 +10,6 @@
 using namespace std;
 
 // algorithm:
-// question: merge k-sorted array
 // example:
 // answer:
 // explanation:

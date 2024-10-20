@@ -10,7 +10,6 @@
 using namespace std;
 
 // algorithm:
-// question: rotting oranges
 // example:
 // answer:
 // explanation:

@@ -13,7 +13,6 @@
 using namespace std;
 
 // algorithm:
-// question: check bst has dead end
 // example:
 // answer:
 // explanation:

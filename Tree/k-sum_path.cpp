@@ -6,7 +6,6 @@
 using namespace std;
 
 // algorithm:
-// question: k-sum path
 // example:
 // answer:
 // explanation:

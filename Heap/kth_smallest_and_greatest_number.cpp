@@ -10,7 +10,6 @@
 using namespace std;
 
 // algorithm:
-// question: kth smallest and greatest number
 // example:
 // answer:
 // explanation:

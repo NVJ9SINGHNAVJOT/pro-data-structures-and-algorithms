@@ -8,7 +8,6 @@
 using namespace std;
 
 // algorithm:
-// question: all nodes till target sum
 // example:
 // answer:
 // explanation:

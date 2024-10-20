@@ -4,7 +4,6 @@
 using namespace std;
 
 // algorithm: discard
-// question: celebrity problem
 // example:
 // answer:
 // explanation:

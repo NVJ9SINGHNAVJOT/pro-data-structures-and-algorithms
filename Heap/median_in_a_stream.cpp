@@ -12,7 +12,6 @@
 using namespace std;
 
 // algorithm:
-// question: median in a stream
 // example:
 // answer:
 // explanation:

@@ -4,7 +4,6 @@
 using namespace std;
 
 // algorithm:
-// question: clone linked list with random pointer
 // example:
 // answer:
 // explanation:

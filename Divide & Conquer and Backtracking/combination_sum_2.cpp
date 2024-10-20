@@ -8,7 +8,6 @@
 using namespace std;
 
 // algorithm:
-// question: combination sum 2
 // example:
 // answer:
 // explanation:

@@ -8,7 +8,6 @@
 using namespace std;
 
 // algorithm:
-// question: integer to english words
 // example:
 // answer:
 // explanation:

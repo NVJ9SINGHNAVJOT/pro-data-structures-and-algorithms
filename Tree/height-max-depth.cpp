@@ -3,7 +3,6 @@
 using namespace std;
 
 // algorithm:
-// question: height-max-depth
 // example:
 // answer:
 // explanation:

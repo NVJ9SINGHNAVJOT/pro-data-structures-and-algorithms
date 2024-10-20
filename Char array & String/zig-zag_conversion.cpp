@@ -10,7 +10,6 @@
 using namespace std;
 
 // algorithm:
-// question: zig-zag conversion
 // example:
 // answer:
 // explanation:

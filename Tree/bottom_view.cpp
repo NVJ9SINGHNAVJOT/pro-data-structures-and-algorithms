@@ -9,7 +9,6 @@
 using namespace std;
 
 // algorithm:
-// question: bottom view
 // example:
 // answer:
 // explanation:

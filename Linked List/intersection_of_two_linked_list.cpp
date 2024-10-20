@@ -2,7 +2,6 @@
 using namespace std;
 
 // algorithm:
-// question: intersection of two linked list
 // example:
 // answer:
 // explanation:

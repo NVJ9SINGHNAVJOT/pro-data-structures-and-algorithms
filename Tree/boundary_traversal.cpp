@@ -9,7 +9,6 @@
 using namespace std;
 
 // algorithm:
-// question: boundary traversal
 // example:
 // answer:
 // explanation:

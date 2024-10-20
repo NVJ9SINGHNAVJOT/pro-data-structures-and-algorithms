@@ -6,7 +6,6 @@
 using namespace std;
 
 // algorithm:
-// question: flatten binary tree to linked list
 // example:
 // answer:
 // explanation:

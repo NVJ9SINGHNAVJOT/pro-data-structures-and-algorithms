@@ -6,7 +6,6 @@
 using namespace std;
 
 // algorithm:
-// question: vertical order traversal
 // example:
 // answer:
 // explanation:

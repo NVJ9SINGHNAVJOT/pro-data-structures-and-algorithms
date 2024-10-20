@@ -6,7 +6,6 @@
 using namespace std;
 
 // algorithm:
-// question: car fleet 2
 // example:
 // answer:
 // explanation:

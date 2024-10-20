@@ -10,7 +10,6 @@
 using namespace std;
 
 // algorithm:
-// question: integer to roman
 // example:
 // answer:
 // explanation:

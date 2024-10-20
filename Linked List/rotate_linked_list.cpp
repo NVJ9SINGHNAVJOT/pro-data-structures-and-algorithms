@@ -2,7 +2,6 @@
 using namespace std;
 
 // algorithm:
-// question: rotate linked list
 // example:
 // answer:
 // explanation:

@@ -10,7 +10,6 @@
 using namespace std;
 
 // algorithm:
-// question: reverse k elements of queue
 // example:
 // answer:
 // explanation:

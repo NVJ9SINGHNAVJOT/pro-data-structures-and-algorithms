@@ -8,7 +8,6 @@
 using namespace std;
 
 // algorithm:
-// question: print spiral traversal of a matrix
 // example:
 // answer:
 // explanation:

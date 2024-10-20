@@ -2,7 +2,6 @@
 using namespace std;
 
 // algorithm: floyd's cycle detection algorithm
-// question: starting point of loop in ll
 // example:
 // answer:
 // explanation:

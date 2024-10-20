@@ -9,7 +9,6 @@
 using namespace std;
 
 // algorithm: bubble sort
-// question:
 // example:
 // answer:
 // explanation:

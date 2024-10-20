@@ -10,7 +10,6 @@
 using namespace std;
 
 // algorithm:
-// question: reverse queue
 // example:
 // answer:
 // explanation:

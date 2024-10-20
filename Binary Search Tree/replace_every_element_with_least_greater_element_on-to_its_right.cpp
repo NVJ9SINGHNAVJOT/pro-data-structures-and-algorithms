@@ -15,7 +15,6 @@
 using namespace std;
 
 // algorithm:
-// question: replace every element with least greater element on/to it's right
 // example:
 // answer:
 // explanation:

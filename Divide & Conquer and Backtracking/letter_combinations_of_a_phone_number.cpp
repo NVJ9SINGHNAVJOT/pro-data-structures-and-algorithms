@@ -8,7 +8,6 @@
 using namespace std;
 
 // algorithm:
-// question: letter combinations of a phone number
 // example:
 // answer:
 // explanation:

@@ -3,7 +3,6 @@
 using namespace std;
 
 // algorithm:
-// question: simplify path
 // example:
 // answer:
 // explanation:

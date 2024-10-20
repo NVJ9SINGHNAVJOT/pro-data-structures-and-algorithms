@@ -5,7 +5,6 @@
 using namespace std;
 
 // algorithm:
-// question: largest area in a histogram
 // example:
 // answer:
 // explanation:

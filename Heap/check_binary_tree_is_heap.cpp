@@ -10,7 +10,6 @@
 using namespace std;
 
 // algorithm:
-// question: check binary tree is heap
 // example:
 // answer:
 // explanation:

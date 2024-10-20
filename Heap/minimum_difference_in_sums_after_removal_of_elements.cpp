@@ -12,7 +12,6 @@
 using namespace std;
 
 // algorithm:
-// question: minimum difference in sums after removal of elements
 // example:
 // answer:
 // explanation:

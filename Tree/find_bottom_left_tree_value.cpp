@@ -6,7 +6,6 @@
 using namespace std;
 
 // algorithm:
-// question: find bottom left tree value
 // example:
 // answer:
 // explanation:

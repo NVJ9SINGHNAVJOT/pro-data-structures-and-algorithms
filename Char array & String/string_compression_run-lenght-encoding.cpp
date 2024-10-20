@@ -10,7 +10,6 @@
 using namespace std;
 
 // algorithm:
-// question: string compression run-lenght-encoding
 // example:
 // answer:
 // explanation:

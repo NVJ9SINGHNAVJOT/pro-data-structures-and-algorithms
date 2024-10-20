@@ -8,7 +8,6 @@
 using namespace std;
 
 // algorithm:
-// question: minimum time difference
 // example:
 // answer:
 // explanation:

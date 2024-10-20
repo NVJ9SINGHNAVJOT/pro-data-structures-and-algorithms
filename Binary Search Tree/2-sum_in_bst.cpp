@@ -10,7 +10,6 @@
 using namespace std;
 
 // algorithm:
-// question: 2 sum in bst
 // example:
 // answer:
 // explanation:

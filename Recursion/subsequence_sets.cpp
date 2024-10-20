@@ -8,7 +8,6 @@
 using namespace std;
 
 // algorithm:
-// question: subsequence sets
 // example:
 // answer:
 // explanation:

@@ -8,7 +8,6 @@
 using namespace std;
 
 // algorithm:
-// question: wildcard matching
 // example:
 // answer:
 // explanation:

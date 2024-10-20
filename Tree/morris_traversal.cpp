@@ -6,7 +6,6 @@
 using namespace std;
 
 // algorithm:
-// question: morris traversal
 // example:
 // answer:
 // explanation:

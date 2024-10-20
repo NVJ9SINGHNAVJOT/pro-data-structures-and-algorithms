@@ -9,7 +9,6 @@
 using namespace std;
 
 // algorithm: binary search
-// question: book allocation problem
 // example:
 // answer:
 // explanation:

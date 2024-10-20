@@ -8,7 +8,6 @@
 using namespace std;
 
 // algorithm:
-// question: house robber
 // example:
 // answer:
 // explanation:

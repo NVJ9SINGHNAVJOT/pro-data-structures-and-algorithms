@@ -10,7 +10,6 @@
 using namespace std;
 
 // algorithm:
-// question: build bst using preorder traversal
 // example:
 // answer:
 // explanation:

@@ -8,7 +8,6 @@
 using namespace std;
 
 // algorithm: divide and conquer
-// question: merge sort
 // example:
 // answer:
 // explanation:

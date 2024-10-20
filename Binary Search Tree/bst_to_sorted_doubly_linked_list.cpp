@@ -10,7 +10,6 @@
 using namespace std;
 
 // algorithm:
-// question: bst to sorted doubly linked list
 // example:
 // answer:
 // explanation:

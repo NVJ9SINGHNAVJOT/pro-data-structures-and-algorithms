@@ -8,7 +8,6 @@
 using namespace std;
 
 // algorithm:
-// question: number of dice rolls with target sum
 // example:
 // answer:
 // explanation:

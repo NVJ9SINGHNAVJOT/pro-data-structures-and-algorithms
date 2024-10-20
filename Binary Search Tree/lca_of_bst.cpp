@@ -10,7 +10,6 @@
 using namespace std;
 
 // algorithm:
-// question: lca of bst
 // example:
 // answer:
 // explanation:

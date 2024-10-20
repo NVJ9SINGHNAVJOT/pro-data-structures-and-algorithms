@@ -2,7 +2,6 @@
 using namespace std;
 
 // algorithm:
-// question: add 2 numbers represented by linked list
 // example:
 // answer:
 // explanation:

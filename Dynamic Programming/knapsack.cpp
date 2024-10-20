@@ -14,7 +14,6 @@
 using namespace std;
 
 // algorithm:
-// question: knapsack
 // example:
 // answer:
 // explanation:

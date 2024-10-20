@@ -10,7 +10,6 @@
 using namespace std;
 
 // algorithm:
-// question: storing factorial of large number
 // example:
 // answer:
 // explanation:

@@ -2,7 +2,6 @@
 using namespace std;
 
 // algorithm:
-// question: kth ancestor
 // example:
 // answer:
 // explanation:

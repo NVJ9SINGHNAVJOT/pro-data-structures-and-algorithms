@@ -3,7 +3,6 @@
 using namespace std;
 
 // algorithm: sliding window
-// question: first non-repeating character in a string
 // example:
 // answer:
 // explanation:

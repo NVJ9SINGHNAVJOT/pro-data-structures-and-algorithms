@@ -9,7 +9,6 @@
 using namespace std;
 
 // algorithm:
-// question: permutations 2
 // example:
 // answer:
 // explanation:

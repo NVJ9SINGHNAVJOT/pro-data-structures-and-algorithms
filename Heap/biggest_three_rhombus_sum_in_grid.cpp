@@ -12,7 +12,6 @@
 using namespace std;
 
 // algorithm:
-// question: biggest three rhombus sum in grid
 // example:
 // answer:
 // explanation:

@@ -8,7 +8,6 @@
 using namespace std;
 
 // algorithm:
-// question: longest common prefix
 // example:
 // answer:
 // explanation:

@@ -4,7 +4,6 @@
 using namespace std;
 
 // algorithm:
-// question: check if word is valid after
 // example:
 // answer:
 // explanation:

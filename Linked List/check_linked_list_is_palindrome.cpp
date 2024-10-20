@@ -2,7 +2,6 @@
 using namespace std;
 
 // algorithm: 
-// question: check linked list is palindrome
 // example:
 // answer:
 // explanation:

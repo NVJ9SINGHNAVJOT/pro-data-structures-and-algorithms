@@ -4,7 +4,6 @@
 using namespace std;
 
 // algorithm:
-// question: create min stack
 // example:
 // answer:
 // explanation:

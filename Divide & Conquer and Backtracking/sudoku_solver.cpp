@@ -8,7 +8,6 @@
 using namespace std;
 
 // algorithm:
-// question: sudoku solver
 // example:
 // answer:
 // explanation:

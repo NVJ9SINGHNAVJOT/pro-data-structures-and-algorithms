@@ -10,7 +10,6 @@
 using namespace std;
 
 // algorithm:
-// question: k-queues in an array
 // example:
 // answer:
 // explanation:

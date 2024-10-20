@@ -8,7 +8,6 @@
 using namespace std;
 
 // algorithm: binary search
-// question: binary search 2d in array
 // example:
 // answer:
 // explanation:

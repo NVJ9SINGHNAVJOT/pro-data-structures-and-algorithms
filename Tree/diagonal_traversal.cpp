@@ -9,7 +9,6 @@
 using namespace std;
 
 // algorithm:
-// question: diagonal traversal
 // example:
 // answer:
 // explanation:

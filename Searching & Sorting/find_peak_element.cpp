@@ -8,7 +8,6 @@
 using namespace std;
 
 // algorithm: binary search
-// question: find peak element in array
 // example: vector<int> arr = {1,4,5,9,55,88,95,120,100,65,41,23,6}
 // answer: ans = 120
 // explanation: peak element is a element in array which is greater from previous and next index elements

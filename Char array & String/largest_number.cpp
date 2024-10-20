@@ -10,7 +10,6 @@
 using namespace std;
 
 // algorithm:
-// question: largest number
 // example:
 // answer:
 // explanation:

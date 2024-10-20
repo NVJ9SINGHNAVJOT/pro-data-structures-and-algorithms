@@ -10,7 +10,6 @@
 using namespace std;
 
 // algorithm:
-// question: number of islands
 // example:
 // answer:
 // explanation:

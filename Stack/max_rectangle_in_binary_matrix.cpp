@@ -5,7 +5,6 @@
 using namespace std;
 
 // algorithm: monotonic stack
-// question: max rectangle in binary matrix
 // example:
 // answer:
 // explanation:

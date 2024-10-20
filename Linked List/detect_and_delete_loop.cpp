@@ -2,7 +2,6 @@
 using namespace std;
 
 // algorithm: floyd's cycle detection algorithm
-// question: detect & delete loop in linked list
 // example:
 // answer:
 // explanation:

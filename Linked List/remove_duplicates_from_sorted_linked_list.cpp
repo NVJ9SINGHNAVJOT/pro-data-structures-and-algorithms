@@ -2,7 +2,6 @@
 using namespace std;
 
 // algorithm:
-// question: remove duplicates from sorted linked list
 // example:
 // answer:
 // explanation:

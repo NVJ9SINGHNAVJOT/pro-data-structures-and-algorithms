@@ -8,7 +8,6 @@
 using namespace std;
 
 // algorithm:
-// question: diameter of binary tree
 // example:
 // answer:
 // explanation:

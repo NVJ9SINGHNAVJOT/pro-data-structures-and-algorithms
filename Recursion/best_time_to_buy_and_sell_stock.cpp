@@ -8,7 +8,6 @@
 using namespace std;
 
 // algorithm:
-// question: best time to buy and sell stock
 // example:
 // answer:
 // explanation:

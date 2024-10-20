@@ -8,7 +8,6 @@
 using namespace std;
 
 // algorithm: kadane's algorithm
-// question: maximum subarray
 // example:
 // answer:
 // explanation:

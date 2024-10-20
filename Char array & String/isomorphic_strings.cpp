@@ -8,7 +8,6 @@
 using namespace std;
 
 // algorithm:
-// question: isomorphic strings
 // example:
 // answer:
 // explanation:

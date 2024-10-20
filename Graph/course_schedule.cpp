@@ -11,7 +11,6 @@
 using namespace std;
 
 // algorithm:
-// question: course schedule
 // example:
 // answer:
 // explanation:

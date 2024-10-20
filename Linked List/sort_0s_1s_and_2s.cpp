@@ -2,7 +2,6 @@
 using namespace std;
 
 // algorithm:
-// question: sort 0s 1s and 2s
 // example:
 // answer:
 // explanation:

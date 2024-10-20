@@ -9,7 +9,6 @@
 using namespace std;
 
 // algorithm: binary search
-// question: eko-spoj problem
 // example:
 // answer:
 // explanation:

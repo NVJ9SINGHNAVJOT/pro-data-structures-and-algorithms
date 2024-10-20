@@ -3,7 +3,6 @@
 using namespace std;
 
 // algorithm:
-// question: sort a stack
 // example:
 // answer:
 // explanation:

@@ -8,7 +8,6 @@
 using namespace std;
 
 // algorithm: binary search
-// question: aggressive cows problem
 // example:
 // answer:
 // explanation:

@@ -12,7 +12,6 @@
 using namespace std;
 
 // algorithm:
-// question: smallest range
 // example:
 // answer:
 // explanation:

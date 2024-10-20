@@ -12,7 +12,6 @@
 using namespace std;
 
 // algorithm:
-// question: coin change
 // example:
 // answer:
 // explanation:

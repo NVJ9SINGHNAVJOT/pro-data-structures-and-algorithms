@@ -12,7 +12,6 @@
 using namespace std;
 
 // algorithm:
-// question: optimised sliding window
 // example:
 // answer:
 // explanation:

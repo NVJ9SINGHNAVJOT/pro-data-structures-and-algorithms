@@ -13,7 +13,6 @@
 using namespace std;
 
 // algorithm:
-// question: bst to sorted linked list
 // example:
 // answer:
 // explanation:

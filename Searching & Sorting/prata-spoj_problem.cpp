@@ -9,7 +9,6 @@
 using namespace std;
 
 // algorithm: binary search
-// question: prata-spoj problem
 // example:
 // answer:
 // explanation:

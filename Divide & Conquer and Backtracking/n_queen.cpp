@@ -9,7 +9,6 @@
 using namespace std;
 
 // algorithm: back tracking
-// question: n queen
 // example:
 // answer:
 // explanation:

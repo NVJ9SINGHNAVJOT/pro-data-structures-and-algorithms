@@ -10,7 +10,6 @@
 using namespace std;
 
 // algorithm:
-// question: longest bst in a binary tree
 // example:
 // answer:
 // explanation:

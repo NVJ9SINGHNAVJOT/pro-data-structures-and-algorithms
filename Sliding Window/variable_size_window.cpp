@@ -12,7 +12,6 @@
 using namespace std;
 
 // algorithm:
-// question: variable size window
 // example:
 // answer:
 // explanation:

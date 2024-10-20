@@ -10,7 +10,6 @@
 using namespace std;
 
 // algorithm:
-// question: interleave first and second hald of queue
 // example:
 // answer:
 // explanation:

@@ -10,7 +10,6 @@
 using namespace std;
 
 // algorithm:
-// question: kth samllest element in bst
 // example:
 // answer:
 // explanation:

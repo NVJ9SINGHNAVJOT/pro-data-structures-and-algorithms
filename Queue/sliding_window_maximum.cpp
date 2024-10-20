@@ -10,7 +10,6 @@
 using namespace std;
 
 // algorithm: sliding window
-// question: sliding window maximum
 // example:
 // answer:
 // explanation:

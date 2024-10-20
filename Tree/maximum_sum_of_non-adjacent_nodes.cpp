@@ -13,7 +13,6 @@
 using namespace std;
 
 // algorithm:
-// question: maximum sum of non-adjacent nodes
 // example:
 // answer:
 // explanation:

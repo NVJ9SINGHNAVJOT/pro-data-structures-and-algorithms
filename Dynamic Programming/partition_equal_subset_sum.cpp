@@ -13,7 +13,6 @@
 using namespace std;
 
 // algorithm:
-// question: partition equal subset sum
 // example:
 // answer:
 // explanation:

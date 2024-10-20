@@ -10,7 +10,6 @@
 using namespace std;
 
 // algorithm:
-// question: queue using stacks
 // example:
 // answer:
 // explanation:
