@@ -12,24 +12,19 @@
 #include <numeric>
 using namespace std;
 
-// algorithm:
-// example:
-// answer:
-// explanation:
-// tags:
-
-// https -> link
-
-// Definition for a data structure
-struct DataStucture
-{
-};
-
-void solve()
-{
-}
-
 int main()
 {
+    int n = 50;
+
+    cout << (n & 1) << endl;
+
+    if (n & 1)
+    {
+        cout << "n is odd" << endl;
+    }
+    else
+    {
+        cout << "n is even" << endl;
+    }
     return 0;
 }
