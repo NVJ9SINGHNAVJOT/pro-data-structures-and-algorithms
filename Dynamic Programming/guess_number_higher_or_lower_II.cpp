@@ -10,6 +10,7 @@
 #include <list>
 #include <unordered_set>
 #include <numeric>
+#include "../includes/vector.cpp"
 using namespace std;
 
 // algorithm:
@@ -50,11 +51,36 @@ int solveMemo(int start, int end, vector<vector<int>> &dp)
     int ans = INT_MAX;
     for (int i = start; i <= end; i++)
     {
-        ans = min(ans, i + max(solveRec(start, i - 1), solveRec(i + 1, end)));
+        ans = min(ans, i + max(solveMemo(start, i - 1, dp), solveMemo(i + 1, end, dp)));
     }
     dp[start][end] = ans;
 
     return ans;
+}
+
+int solveTab(int n)
+{
+    vector<vector<int>> dp(n + 2, vector<int>(n + 2, 0));
+
+    for (int start = n; start >= 1; start--)
+    {
+        for (int end = 1; end <= n; end++)
+        {
+
+            if (start >= end)
+                continue;
+            else
+            {
+                int ans = INT_MAX;
+                for (int i = start; i <= end; i++)
+                {
+                    ans = min(ans, i + max(dp[start][i - 1], dp[i + 1][end]));
+                }
+                dp[start][end] = ans;
+            }
+        }
+    }
+    return dp[1][n];
 }
 
 int getMoneyAmount(int n)
@@ -63,7 +89,8 @@ int getMoneyAmount(int n)
     // ans = solveRec(1, n);
 
     vector<vector<int>> dp(n + 1, vector<int>(n + 1, -1));
-    ans = solveMemo(1, n, dp);
+
+    ans = solveTab(n);
     return ans;
 }
 
