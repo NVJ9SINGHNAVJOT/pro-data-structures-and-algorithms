@@ -36,6 +36,28 @@ int solveRec(vector<int> &arr, map<pair<int, int>, int> &maxi, int left, int rig
     return ans;
 }
 
+int solveMemo(vector<int> &arr, map<pair<int, int>, int> &maxi, int left, int right, vector<vector<int>> &dp)
+{
+    // base case
+    if (left == right)
+        return 0;
+
+    if (dp[left][right] != -1)
+    {
+        return dp[left][right];
+    }
+
+    int ans = INT_MAX;
+
+    for (int i = left; i < right; i++)
+    {
+        ans = min(ans,
+                  maxi[{left, i}] * maxi[{i + 1, right}] + solveMemo(arr, maxi, left, i, dp) + solveMemo(arr, maxi, i + 1, right, dp));
+    }
+    dp[left][right] = ans;
+    return dp[left][right];
+}
+
 int mctFromLeafValues(vector<int> &arr)
 {
     map<pair<int, int>, int> maxi;
@@ -48,7 +70,10 @@ int mctFromLeafValues(vector<int> &arr)
         }
     }
     int n = arr.size();
-    int ans = solveRec(arr, maxi, 0, n - 1);
+    int ans;
+    // ans = solveRec(arr, maxi, 0, n - 1);
 
+    vector<vector<int>> dp(n, vector<int>(n, -1));
+    ans = solveMemo(arr, maxi, 0, n - 1, dp);
     return ans;
 }
