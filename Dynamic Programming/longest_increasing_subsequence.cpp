@@ -68,7 +68,7 @@ int solveMemo(vector<int> &arr, int prev, int curr, vector<vector<int>> &dp)
 int solveTab(vector<int> &arr)
 {
     int n = arr.size();
-    vector<vector<int>> dp(n, vector<int>(n + 1, -1));
+    vector<vector<int>> dp(n + 1, vector<int>(n + 1, -1));
 
     for (int curr = n - 1; curr >= 0; curr--)
     {
