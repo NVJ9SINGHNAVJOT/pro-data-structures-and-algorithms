@@ -18,9 +18,14 @@ public:
         this->next = NULL;
     }
 
-    // TODO: Write a destrcutor to delete a node
     ~Node()
     {
+        // If the node points to another node, delete it recursively
+        if (this->next != NULL)
+        {
+            delete this->next;
+            this->next = NULL;
+        }
 
         cout << "Node with value: " << this->data << " deleted" << endl;
     }
