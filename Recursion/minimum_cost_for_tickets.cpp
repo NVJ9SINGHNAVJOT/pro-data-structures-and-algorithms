@@ -13,6 +13,8 @@ using namespace std;
 // explanation:
 // tags:
 
+// https://leetcode.com/problems/minimum-cost-for-tickets/description/
+
 int costTicketsHelper(vector<int> &days, vector<int> &costs, int i)
 {
     // base
