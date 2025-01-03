@@ -90,7 +90,7 @@ public:
         int i = 0;
         this->insertWordHelper(this->root, word, i);
     }
-    bool searchWordHelper(string word)
+    bool searchWord(string word)
     {
         int i = 0;
         return this->searchWordHelper(this->root, word, i);
@@ -99,4 +99,25 @@ public:
 
 int main()
 {
+    Trie *trie = new Trie();
+
+    trie->insertWord("coding");
+    trie->insertWord("code");
+    trie->insertWord("coder");
+    trie->insertWord("codehelp");
+    trie->insertWord("baba");
+    trie->insertWord("baby");
+    trie->insertWord("babu");
+    trie->insertWord("shona");
+    trie->insertWord("chakme");
+
+    cout << "Searching 'chakme': ";
+    if (trie->searchWord("chakme"))
+    {
+        cout << "present" << endl;
+    }
+    else
+    {
+        cout << "absent" << endl;
+    }
 }
