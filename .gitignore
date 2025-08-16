@@ -4,3 +4,9 @@
 
 # ignore files with names like tempCodeRunnerFile
 *tempCodeRunnerFile*
+
+# Ignore executables (files without extension)
+*
+
+# But keep files with extensions
+!*.*

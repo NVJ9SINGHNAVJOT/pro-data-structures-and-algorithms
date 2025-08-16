@@ -50,7 +50,7 @@ int main()
 {
     vector<int> arr = {5, 8, 3, 2, 1, 9, 7};
 
-    cout << solveOptimal(arr);
+    cout << solveOptimal(arr) << endl;
 
     return 0;
 }
